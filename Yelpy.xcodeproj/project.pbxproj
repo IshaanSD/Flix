@@ -16,6 +16,8 @@
 		00A4F19427C9DF6E00E1A2C5 /* YelpyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A4F19327C9DF6E00E1A2C5 /* YelpyTests.swift */; };
 		00A4F19E27C9DF6E00E1A2C5 /* YelpyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A4F19D27C9DF6E00E1A2C5 /* YelpyUITests.swift */; };
 		00A4F1A027C9DF6E00E1A2C5 /* YelpyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A4F19F27C9DF6E00E1A2C5 /* YelpyUITestsLaunchTests.swift */; };
+		00A4F1AF27CA052700E1A2C5 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A4F1AE27CA052700E1A2C5 /* MovieCell.swift */; };
+		00A4F1B227CA0AC200E1A2C5 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 00A4F1B127CA0AC200E1A2C5 /* AlamofireImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		00A4F19927C9DF6E00E1A2C5 /* YelpyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelpyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00A4F19D27C9DF6E00E1A2C5 /* YelpyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpyUITests.swift; sourceTree = "<group>"; };
 		00A4F19F27C9DF6E00E1A2C5 /* YelpyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		00A4F1AE27CA052700E1A2C5 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A4F1B227CA0AC200E1A2C5 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +83,7 @@
 		00A4F17027C9DF6A00E1A2C5 = {
 			isa = PBXGroup;
 			children = (
+				00A4F1AE27CA052700E1A2C5 /* MovieCell.swift */,
 				00A4F17B27C9DF6A00E1A2C5 /* Yelpy */,
 				00A4F19227C9DF6E00E1A2C5 /* YelpyTests */,
 				00A4F19C27C9DF6E00E1A2C5 /* YelpyUITests */,
@@ -143,6 +148,9 @@
 			dependencies = (
 			);
 			name = Yelpy;
+			packageProductDependencies = (
+				00A4F1B127CA0AC200E1A2C5 /* AlamofireImage */,
+			);
 			productName = Yelpy;
 			productReference = 00A4F17927C9DF6A00E1A2C5 /* Yelpy.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 00A4F17027C9DF6A00E1A2C5;
+			packageReferences = (
+				00A4F1B027CA0AC200E1A2C5 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 00A4F17A27C9DF6A00E1A2C5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -260,6 +271,7 @@
 			files = (
 				00A4F18127C9DF6B00E1A2C5 /* ViewController.swift in Sources */,
 				00A4F17D27C9DF6B00E1A2C5 /* AppDelegate.swift in Sources */,
+				00A4F1AF27CA052700E1A2C5 /* MovieCell.swift in Sources */,
 				00A4F17F27C9DF6B00E1A2C5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		00A4F1B027CA0AC200E1A2C5 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		00A4F1B127CA0AC200E1A2C5 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 00A4F1B027CA0AC200E1A2C5 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 00A4F17127C9DF6A00E1A2C5 /* Project object */;
 }
